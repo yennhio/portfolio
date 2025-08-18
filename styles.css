@@ -1,0 +1,173 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #5b9165;
+  padding: 2% 10% 5% 10%;
+}
+
+body a {
+  color: #5b9165;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+header a {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: -8px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 1200px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* tiles */
+.tile {
+  color: #373737;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.tile:hover {
+  background: #ddd;
+}
+
+.tile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* pop up */
+
+/* Popup overlay with transparent green background */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(75, 111, 75, 0.642); /* transparent green */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popup-overlay.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Popup content box centered, 90% of screen */
+.popup-content {
+  width: 80vw;
+  height: 82vh;
+  background-color: #fff;
+  overflow: auto; /* vertical scroll if content is tall */
+  padding: 4rem;
+  cursor: default;
+  scrollbar-color: #bddbc2 white;
+  scrollbar-width: thin;
+}
+
+/* Close button in top-right corner */
+.popup-close {
+  position: absolute;
+  font-size: 3rem;
+  top: 0.3rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  z-index: 1001;
+}
+
+/* Image that fits inside the popup content */
+.popup-preview {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+#popup-title {
+  font-size: 2rem;
+}
+
+.popup-description {
+  font-size: 1.3rem;
+}
+
+template img {
+  width: 500px !important;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 0.85rem;
+}

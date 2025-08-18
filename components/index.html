@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" role="button">
+        <img src="/components/favicon.svg" alt="Logo" />
+      </a>
+
+      <nav>
+        <a href="#websites">WEBSITES</a>
+        <a href="#digital">DIGITAL CONTENT</a>
+        <!-- <a href="#personal-projects">PERSONAL PROJECTS</a> -->
+      </nav>
+
+      <a class="contact-email" href="mailto:nhidangn@gmail.com"
+        >nhidangn@gmail.com</a
+      >
+    </header>
+
+    <main>
+      <h1>SEE MY WORK</h1>
+
+      <section>
+        <h2 id="websites">WEBSITES</h2>
+        <div id="websites-row" class="row"></div>
+      </section>
+
+      <section>
+        <h2 id="digital">DIGITAL ASSETS</h2>
+        <div id="digital-assets-row" class="row"></div>
+      </section>
+
+      <!-- <section>
+        <h2 id="personal-projects">PERSONAL PROJECTS</h2>
+        <div id="personal-projects-row" class="row"></div>
+      </section> -->
+    </main>
+
+    <template id="tile-template">
+      <div class="tile-container">
+        <div class="tile" tabindex="0">
+          <img class="tile-image" src="" alt="" />
+        </div>
+        <h3 class="tile-title"></h3>
+        <p class="tile-tags"></p>
+      </div>
+    </template>
+
+    <template id="popup-template">
+      <div class="popup-overlay" tabindex="-1">
+        <div
+          class="popup-content"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="popup-title"
+        >
+          <button class="popup-close" aria-label="Close popup">&times;</button>
+          <h2 id="popup-title"></h2>
+          <p class="popup-description"></p>
+          <div class="popup-preview-container"></div>
+        </div>
+      </div>
+    </template>
+
+    <footer>
+      <p>CONTACT</p>
+      <a href="mailto:nhidangn@gmail.com">nhidangn@gmail.com</a>
+    </footer>
+
+    <script src="projects.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
