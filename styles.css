@@ -31,8 +31,9 @@ nav {
   gap: 2rem;
 }
 
-@media (max-width:700px) {
-  nav, .contact-email {
+@media (max-width: 700px) {
+  nav,
+  .contact-email {
     display: none;
   }
 }
@@ -86,10 +87,6 @@ p {
   transition: background-color 0.2s;
 }
 
-.tile:hover {
-  background: #ddd;
-}
-
 .tile-image {
   width: 100%;
   height: 100%;
@@ -97,8 +94,6 @@ p {
 }
 
 /* pop up */
-
-/* Popup overlay with transparent green background */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -137,6 +132,12 @@ p {
   cursor: default;
   scrollbar-color: #bddbc2 white;
   scrollbar-width: thin;
+}
+
+@media (max-width: 700px) {
+  .popup-content {
+    padding: 1rem;
+  }
 }
 
 /* Close button in top-right corner */
