@@ -153,6 +153,12 @@ p {
   z-index: 1001;
 }
 
+@media (max-width: 700px) {
+  .popup-close {
+    color: #65af71;
+  }
+}
+
 /* Image that fits inside the popup content */
 .popup-preview {
   width: 100%;
@@ -177,4 +183,8 @@ template img {
 footer {
   margin-top: 4rem;
   font-size: 0.85rem;
+}
+
+footer p {
+  font-weight: bold;
 }
