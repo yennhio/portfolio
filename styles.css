@@ -18,7 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 
 header img {
@@ -31,10 +31,18 @@ nav {
   gap: 2rem;
 }
 
-@media (max-width: 700px) {
+#my-name {
+  display: none;
+}
+
+@media (max-width: 1000px) {
   nav,
   .contact-email {
     display: none;
+  }
+
+  #my-name {
+    display: block;
   }
 }
 
@@ -122,7 +130,7 @@ p {
   transform: scale(1);
 }
 
-/* Popup content box centered, 90% of screen */
+/* Popup content box centered, 80% width of screen */
 .popup-content {
   width: 80vw;
   height: 82vh;
@@ -134,13 +142,18 @@ p {
   scrollbar-width: thin;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .popup-content {
-    padding: 1rem;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .popup-close {
+    color: #65af71 !important;
   }
 }
 
-/* Close button in top-right corner */
+/* Close button in top-right corner, in popup */
 .popup-close {
   position: absolute;
   font-size: 3rem;
@@ -150,16 +163,10 @@ p {
   border: none;
   cursor: pointer;
   color: white;
-  z-index: 1001;
+  z-index: 2000;
 }
 
-@media (max-width: 700px) {
-  .popup-close {
-    color: #65af71;
-  }
-}
-
-/* Image that fits inside the popup content */
+/* Preview image on each tile */
 .popup-preview {
   width: 100%;
   height: auto;

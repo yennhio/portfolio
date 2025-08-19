@@ -43,7 +43,7 @@ const projects = {
       link: "#",
     },
     {
-      name: "Discovery Event Logo",
+      name: "Discovery Event Visual Identity",
       description:
         "A complete event rebranding project, featuring a new visual identity, custom logo, and updated promotional materials.",
       previewImage: "/pics/mdd-preview.png",
