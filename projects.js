@@ -34,16 +34,18 @@ const projects = {
   digitalAssets: [
     {
       name: "Annual Employee Gathering Event Branding",
-      description: "A modern logo created for a client.",
+      description:
+        "A complete event branding package with custom theme illustration and promotional materials, created to set a warm and inviting tone for an annual employee event.",
       previewImage: "/pics/hornethope-preview.png",
-      preview: "/pics/hornet-hope.png",
+      preview: "/pics/hornet.png",
       previewType: "image",
       tags: "Illustrator",
       link: "#",
     },
     {
       name: "Discovery Event Logo",
-      description: "Flyer for a marketing campaign.",
+      description:
+        "A complete event rebranding project, featuring a new visual identity, custom logo, and updated promotional materials.",
       previewImage: "/pics/mdd-preview.png",
       preview: "/pics/mdd.png",
       previewType: "image",
@@ -52,9 +54,10 @@ const projects = {
     },
     {
       name: "PureForm Dental Booklet",
-      description: "Set of social media graphics.",
+      description:
+        "A clean and professional booklet designed to effectively advertise the CoreZir™ Zirconia product for PureForm Dental.",
       previewImage: "/pics/pureform-preview.png",
-      preview: "/pics/pureform-preview.png",
+      preview: "/pics/pureform.png",
       previewType: "image",
       tags: "Canva, Illustrator",
       link: "#",
